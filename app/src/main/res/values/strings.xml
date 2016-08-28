@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Quizy</string>
 
-    <string name="question_1">Quizy</string>
+    <string name="question_1">Hmmm?</string>
     <string name="question_2">Quizy</string>
     <string name="question_3">Quizy</string>
     <string name="question_4">Quizy</string>
