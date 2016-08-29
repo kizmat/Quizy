@@ -1,3 +1,10 @@
+<!--
+   Identifier convention: q1b1 = question one, button 1
+                          q2b2 = question two, button 2
+
+
+   -->
+
 <resources>
     <string name="app_name">Quizy</string>
 
