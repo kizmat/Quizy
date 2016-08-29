@@ -12,7 +12,10 @@
     <string name="q2b1">local</string>
     <string name="q2b2">remote</string>
 
-    <string name="question_3">Quizy</string>
+    <string name="question_3">Everything in Git is check-summed before it is stored and is then referred to by that checksum</string>
+    <string name="q3b1">True</string>
+    <string name="q3b2">False</string>
+
     <string name="question_4">Quizy</string>
     <string name="question_5">Quizy</string>
 </resources>
