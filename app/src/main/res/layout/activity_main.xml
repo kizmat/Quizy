@@ -132,7 +132,7 @@
             style="@style/questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_1" />
+            android:text="@string/question_4" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -144,12 +144,12 @@
             <CheckBox
                 android:id="@+id/q4b1"
                 style="@style/radioButton"
-                android:text="2nd Row" />
+                android:text="@string/q4b1" />
 
             <CheckBox
                 android:id="@+id/q4b2"
                 style="@style/radioButton"
-                android:text="New RadioButton" />
+                android:text="@string/q4b2" />
 
         </LinearLayout>
 
@@ -176,7 +176,7 @@
             style="@style/questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_1" />
+            android:text="@string/question_5" />
 
         <EditText
             android:id="@+id/q5TextAnswer"
@@ -185,10 +185,11 @@
 
         <!--Grading Button-->
         <Button
+            android:id="@+id/checkAnswers"
             style="@style/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question_1" />
+            android:text="@string/checkAnswers" />
 
 
     </LinearLayout>
