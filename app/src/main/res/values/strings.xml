@@ -2,14 +2,16 @@
     <string name="app_name">Quizy</string>
 
     <string name="question_1">A git project, consists of 3 main sections or parts</string>
+
     <string name="q1b1">working directory</string>
     <string name="q1b2">.git directory</string>
     <string name="q1b3">staging area</string>
     <string name="q1b4">root directory</string>
 
+    <string name="question_2">Nearly all git operations are: </string>
+    <string name="q2b1">local</string>
+    <string name="q2b2">remote</string>
 
-
-    <string name="question_2">Quizy</string>
     <string name="question_3">Quizy</string>
     <string name="question_4">Quizy</string>
     <string name="question_5">Quizy</string>
