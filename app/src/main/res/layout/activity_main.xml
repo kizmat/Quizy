@@ -9,225 +9,227 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.tribe9.quizy.MainActivity">
 
+    <!--Main containment Layout-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:focusable="true"
-        android:focusableInTouchMode="true">
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <!--Header Image-->
 
         <ImageView
-            android:src="@drawable/gate2"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            />
+            android:scaleType="fitCenter"
+            android:src="@drawable/git" />
+
+        <!--Question 1, Checkbox-->
 
         <TextView
+            style="@style/questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_1"
-            style="@style/questions"/>
+            android:text="@string/question_1" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:layout_gravity="center_horizontal">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/q1b1"
-                android:text="2nd Row"
-                style="@style/radioButton"/>
-
-            <RadioButton
-                android:id="@+id/q1b2"
-                android:text="New RadioButton"
                 style="@style/radioButton"
-                />
+                android:text="@string/q1b1" />
+
+            <CheckBox
+                android:id="@+id/q1b2"
+                style="@style/radioButton"
+                android:text="@string/q1b2" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:layout_gravity="center_horizontal">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/q1b3"
-                android:text="2nd Row"
-                style="@style/radioButton"/>
-
-            <RadioButton
-                android:id="@+id/q1b4"
-                android:text="New RadioButton"
                 style="@style/radioButton"
-                />
+                android:text="@string/q1b3" />
+
+            <CheckBox
+                android:id="@+id/q1b4"
+                style="@style/radioButton"
+                android:text="@string/q1b4" />
 
         </LinearLayout>
+
+        <!--Question 2, Radio Buttons -->
 
         <TextView
+            style="@style/questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_1"
-            style="@style/questions"/>
+            android:text="@string/question_1" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:layout_gravity="center_horizontal">
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/q2b1"
-                android:text="2nd Row"
-                style="@style/radioButton"/>
+                style="@style/radioButton"
+                android:text="2nd Row" />
 
             <RadioButton
                 android:id="@+id/q2b2"
-                android:text="New RadioButton"
                 style="@style/radioButton"
-                />
+                android:text="New RadioButton" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:layout_gravity="center_horizontal">
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/q2b3"
-                android:text="2nd Row"
-                style="@style/radioButton"/>
+                style="@style/radioButton"
+                android:text="2nd Row" />
 
             <RadioButton
                 android:id="@+id/q2b4"
-                android:text="New RadioButton"
                 style="@style/radioButton"
-                />
+                android:text="New RadioButton" />
 
         </LinearLayout>
 
+        <!--Question 3, Radio Buttons-->
+
         <TextView
+            style="@style/questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_1"
-            style="@style/questions"/>
+            android:text="@string/question_1" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:layout_gravity="center_horizontal">
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/q3b1"
-                android:text="2nd Row"
-                style="@style/radioButton"/>
+                style="@style/radioButton"
+                android:text="2nd Row" />
 
             <RadioButton
                 android:id="@+id/q3b2"
-                android:text="New RadioButton"
                 style="@style/radioButton"
-                />
+                android:text="New RadioButton" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:layout_gravity="center_horizontal">
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/q3b3"
-                android:text="2nd Row"
-                style="@style/radioButton"/>
+                style="@style/radioButton"
+                android:text="2nd Row" />
 
             <RadioButton
                 android:id="@+id/q3b4"
-                android:text="New RadioButton"
                 style="@style/radioButton"
-                />
+                android:text="New RadioButton" />
 
         </LinearLayout>
 
+        <!--Question 4, Checkbox-->
+
         <TextView
+            style="@style/questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_1"
-            style="@style/questions"/>
-
-
-
+            android:text="@string/question_1" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:layout_gravity="center_horizontal">
+            android:orientation="horizontal">
 
             <CheckBox
                 android:id="@+id/q4b1"
-                android:text="2nd Row"
-                style="@style/radioButton"/>
+                style="@style/radioButton"
+                android:text="2nd Row" />
 
             <CheckBox
                 android:id="@+id/q4b2"
-                android:text="New RadioButton"
                 style="@style/radioButton"
-                />
+                android:text="New RadioButton" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
-            android:layout_gravity="center_horizontal">
+            android:orientation="horizontal">
 
             <CheckBox
                 android:id="@+id/q4b3"
-                android:text="2nd Row"
-                style="@style/radioButton"/>
+                style="@style/radioButton"
+                android:text="2nd Row" />
 
             <CheckBox
                 android:id="@+id/q4b4"
-                android:text="New RadioButton"
                 style="@style/radioButton"
-                />
+                android:text="New RadioButton" />
 
         </LinearLayout>
-
+        <!--Question 5, Free Text-->
         <TextView
+            style="@style/questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_1"
-            style="@style/questions"/>
+            android:text="@string/question_1" />
 
         <EditText
             android:id="@+id/q5TextAnswer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
 
+        <!--Grading Button-->
         <Button
-            android:text="@string/question_1"
+            style="@style/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/radioButton"
-            />
+            android:text="@string/question_1" />
 
 
     </LinearLayout>
-
-
-
 
 
 </ScrollView>
