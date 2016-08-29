@@ -1,28 +1,28 @@
 <resources>
     <string name="app_name">Quizy</string>
 
-    <string name="question_1">A git project, consists of 3 main sections or parts</string>
+    <string name="question_1">1: a git project, consists of 3 main sections or parts</string>
 
     <string name="q1b1">working directory</string>
     <string name="q1b2">.git directory</string>
     <string name="q1b3">staging area</string>
     <string name="q1b4">root directory</string>
 
-    <string name="question_2">Nearly all git operations are: </string>
+    <string name="question_2">2: nearly all git operations are: </string>
     <string name="q2b1">local</string>
     <string name="q2b2">remote</string>
 
-    <string name="question_3">Everything in Git is check-summed before it is stored and is then referred to by that checksum</string>
+    <string name="question_3">3: everything in Git is check-summed before it is stored and is then referred to by that checksum</string>
     <string name="q3b1">True</string>
     <string name="q3b2">False</string>
 
-    <string name="question_4">Which of the following are valid git commands</string>
+    <string name="question_4">4: which of the following are valid git commands</string>
     <string name="q4b1">git clone [url]</string>
     <string name="q4b2">git add -u</string>
     <string name="q4b3">git commit -z </string>
     <string name="q4b4">git destroy [dir]</string>
 
-    <string name="question_5">type in the command which would show the commit history</string>
+    <string name="question_5">5: type in the command which would show the commit history</string>
 
     <string name="checkAnswers">Check Answers</string>
 </resources>
