@@ -163,12 +163,12 @@
             <CheckBox
                 android:id="@+id/q4b3"
                 style="@style/radioButton"
-                android:text="2nd Row" />
+                android:text="@string/q4b3" />
 
             <CheckBox
                 android:id="@+id/q4b4"
                 style="@style/radioButton"
-                android:text="New RadioButton" />
+                android:text="@string/q4b4" />
 
         </LinearLayout>
         <!--Question 5, Free Text-->
