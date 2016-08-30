@@ -162,11 +162,12 @@ public class MainActivity extends AppCompatActivity {
         // Question 5
         EditText q5textAnswer = (EditText) findViewById(R.id.q5TextAnswer);
 
-        if (q5textAnswer.length() > 0) {
-
-        } else {
+        if (q5textAnswer.getText().toString().trim().equals("git log") ) {
+            score += 1;
+        } else if (q5textAnswer.getText().length() == 0) {
             notAnswered.add(5);
-
+        } else {
+            errorLog(5);
         }
     }
 
