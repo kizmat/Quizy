@@ -30,7 +30,8 @@
             android:layout_height="150dp"
             android:contentDescription="@string/logoContentDesc"
             android:scaleType="fitCenter"
-            android:src="@drawable/git" />
+            android:src="@drawable/git"
+            android:layout_marginBottom="8dp"/>
 
         <!--Question 1, Checkbox-->
 
