@@ -144,17 +144,14 @@ public class MainActivity extends AppCompatActivity {
         CheckBox q4b3 = (CheckBox) findViewById(R.id.q4b3);
         CheckBox q4b4 = (CheckBox) findViewById(R.id.q4b4);
 
-        if (q4b1.isChecked()) {
-
-        } else if (q4b2.isChecked()) {
-
-        } else if (q4b3.isChecked()) {
-
-        } else if (q4b4.isChecked()) {
+        // Check if correct boxes are checked
+        if (q4b1.isChecked() && q4b2.isChecked()) {
+            score = score + 1;
+        } else if (q4b1.isChecked() || q4b2.isChecked() || q4b3.isChecked() || q4b4.isChecked()) {
+            errorLog(4);
         } else {
             // no radio buttons are checked
             notAnswered.add(4);
-
         }
     }
 
