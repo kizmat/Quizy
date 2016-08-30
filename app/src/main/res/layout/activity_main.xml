@@ -51,7 +51,6 @@
             <CheckBox
                 android:id="@+id/q1b1"
                 style="@style/radioButton"
-                android:checked="true"
                 android:text="@string/q1b1" />
 
             <CheckBox
