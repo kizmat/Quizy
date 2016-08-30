@@ -103,15 +103,16 @@ public class MainActivity extends AppCompatActivity {
         RadioButton q2b1 = (RadioButton) findViewById(R.id.q2b1);
         RadioButton q2b2 = (RadioButton) findViewById(R.id.q2b2);
 
-        if (question_two_radio_group.getCheckedRadioButtonId() == -1) {
+        if (q2b1.isChecked()){
+            score += 1;
+        } else if (question_two_radio_group.getCheckedRadioButtonId() == -1) {
             // no radio buttons are checked
             notAnswered.add(2);
 
+        } else {
 
-        } else if (q2b1.isChecked()){
-
-            // one of the radio buttons is checked
-                score += 1;
+            // Wrong Answer
+                errorLog(2);
             }
         }
 
