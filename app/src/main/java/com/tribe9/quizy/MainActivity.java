@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-
     protected void gradeQuiz(View view) {
         // Clear notAnswered list
         notAnswered.clear();
@@ -48,17 +47,16 @@ public class MainActivity extends AppCompatActivity {
 
         if (notAnswered.isEmpty() && wrongAnswer.isEmpty()) {
             // All questions answered, none answered wrong, display score
-            Toast.makeText(this, "Your Score is: " + score, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Your Score is: " + (((double) score / 5) * 100) + "%", Toast.LENGTH_SHORT).show();
 
         } else if (notAnswered.isEmpty()) {
             // Display score with errors
-            Toast.makeText(this, "Your Score is: " + score + "\n" +
+            Toast.makeText(this, "Your Score is: " + (double) score / 5 * 100 + "% \n" +
                     "You answered questions: " + wrongAnswer + " incorrectly", Toast.LENGTH_LONG).show();
         } else {
             // Show user which questions need to be answered
             Toast.makeText(this, "Please answer questions: " + notAnswered, Toast.LENGTH_SHORT).show();
         }
-
     }
 
     // Method Logs questions answered incorrectly to wrongAnswer Array
@@ -75,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox q1b4 = (CheckBox) findViewById(R.id.q1b4);
 
         // Check if correct boxes are checked
-        if (q1b1.isChecked() && q1b2.isChecked() && q1b3.isChecked()) {
+        if (q1b1.isChecked() && q1b2.isChecked() && q1b3.isChecked() && !q1b4.isChecked()) {
             score = score + 1;
         } else if (q1b1.isChecked() || q1b2.isChecked() || q1b3.isChecked() || q1b4.isChecked()) {
             // Adds question to incorrectly answered questions list
@@ -92,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton q2b1 = (RadioButton) findViewById(R.id.q2b1);
 
         if (q2b1.isChecked()) {
-            score += 1;
+            score = score + 1;
         } else if (question_two_radio_group.getCheckedRadioButtonId() == -1) {
             // no radio buttons are checked, adds question to not answered list
             notAnswered.add(2);
@@ -108,15 +106,13 @@ public class MainActivity extends AppCompatActivity {
         // Question Three
         RadioGroup question_three_radio_group = (RadioGroup) findViewById(R.id.question_three_radio_group);
         RadioButton q3b1 = (RadioButton) findViewById(R.id.q3b1);
-        //RadioButton q3b2 = (RadioButton) findViewById(R.id.q3b2);
 
         if (q3b1.isChecked()) {
-            score += 1;
+            score = score + 1;
 
         } else if (question_three_radio_group.getCheckedRadioButtonId() == -1) {
             // no radio buttons are checked, adds question to not answered list
             notAnswered.add(3);
-
 
         } else {
             // // Wrong Answer logged to list of incorrect answers
@@ -133,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox q4b4 = (CheckBox) findViewById(R.id.q4b4);
 
         // Check if correct boxes are checked
-        if (q4b1.isChecked() && q4b2.isChecked()) {
+        if (q4b1.isChecked() && q4b2.isChecked() && !q4b3.isChecked() && !q4b4.isChecked()) {
             score = score + 1;
         } else if (q4b1.isChecked() || q4b2.isChecked() || q4b3.isChecked() || q4b4.isChecked()) {
             errorLog(4);
