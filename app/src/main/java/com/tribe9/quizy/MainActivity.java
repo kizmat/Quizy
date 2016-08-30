@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         notAnswered.clear();
         // Clear score
         score = 0;
+        // Clear wrongAnswer log
+        wrongAnswer.clear();
 
         // Check all questions have been answered
 
@@ -123,15 +125,19 @@ public class MainActivity extends AppCompatActivity {
         // Question Three
         RadioGroup question_three_radio_group = (RadioGroup) findViewById(R.id.question_three_radio_group);
         RadioButton q3b1 = (RadioButton) findViewById(R.id.q3b1);
-        RadioButton q3b2 = (RadioButton) findViewById(R.id.q3b2);
+        //RadioButton q3b2 = (RadioButton) findViewById(R.id.q3b2);
 
-        if (question_three_radio_group.getCheckedRadioButtonId() == -1) {
+        if (q3b1.isChecked()) {
+            score += 1;
+
+        } else if (question_three_radio_group.getCheckedRadioButtonId() == -1) {
             // no radio buttons are checked
             notAnswered.add(3);
 
 
         } else {
-            // one of the radio buttons is checked
+            // Wrong Answer provided
+            errorLog(3);
         }
     }
 
