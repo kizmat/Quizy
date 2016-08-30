@@ -89,7 +89,8 @@
             android:layout_height="wrap_content"
             android:text="@string/question_2" />
 
-        <LinearLayout
+        <RadioGroup
+            android:id="@+id/question_two_radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -106,7 +107,7 @@
                 style="@style/radioButton"
                 android:text="@string/q2b2" />
 
-        </LinearLayout>
+        </RadioGroup>
 
         <!--Question 3, Radio Buttons-->
 
@@ -116,7 +117,8 @@
             android:layout_height="wrap_content"
             android:text="@string/question_3" />
 
-        <LinearLayout
+        <RadioGroup
+            android:id="@+id/question_three_radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -133,7 +135,7 @@
                 style="@style/radioButton"
                 android:text="@string/q3b2" />
 
-        </LinearLayout>
+        </RadioGroup>
 
         <!--Question 4, Checkbox-->
 
