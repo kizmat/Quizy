@@ -30,6 +30,11 @@
     <string name="q4b4">git destroy [dir]</string>
 
     <string name="question_5">5: type in the command which would show the commit history</string>
+    <string name="q5Hint">type cmd here</string>
+
 
     <string name="checkAnswers">Check Answers</string>
+
+    <string name="logoContentDesc">Official Git Logo</string>
+
 </resources>
