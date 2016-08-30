@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
     protected void gradeQuiz(View view) {
         // Clear notAnswered list
         notAnswered.clear();

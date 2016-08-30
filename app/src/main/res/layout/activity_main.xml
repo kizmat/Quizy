@@ -12,9 +12,7 @@
     <!--
     Identifier convention: q1b1 = question one, button 1
                            q2b2 = question two, button 2
-
-
-    -->
+     -->
 
     <!--Main containment Layout-->
 
@@ -28,9 +26,9 @@
         <!--Header Image-->
 
         <ImageView
-            android:contentDescription="@string/logoContentDesc"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:contentDescription="@string/logoContentDesc"
             android:scaleType="fitCenter"
             android:src="@drawable/git" />
 
@@ -50,9 +48,9 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:checked="true"
                 android:id="@+id/q1b1"
                 style="@style/radioButton"
+                android:checked="true"
                 android:text="@string/q1b1" />
 
             <CheckBox
@@ -161,7 +159,6 @@
                 android:id="@+id/q4b2"
                 style="@style/radioButton"
                 android:text="@string/q4b2" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -190,24 +187,21 @@
             android:text="@string/question_5" />
 
         <EditText
-            android:hint="@string/q5Hint"
             android:id="@+id/q5TextAnswer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/q5Hint"
             android:inputType="textNoSuggestions"
             android:textAllCaps="false" />
 
         <!--Grading Button-->
         <Button
-            android:onClick="gradeQuiz"
             android:id="@+id/checkAnswers"
             style="@style/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="gradeQuiz"
             android:text="@string/checkAnswers" />
-
-
     </LinearLayout>
-
 
 </ScrollView>
